@@ -1,0 +1,14 @@
+@import url(./__logo/header__logo.css);
+@import url(./__lang-link/header__lang-link.css);
+
+.header {
+  width: 1184px;
+  min-height: 52px;
+  padding-top: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: space-between;
+}
