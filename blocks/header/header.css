@@ -3,7 +3,7 @@
 
 .header {
   width: calc(100% - 96px);
-  max-width: 1184px;
+  max-width: 1280px;
   min-height: 52px;
   padding-top: 28px;
   display: -webkit-box;

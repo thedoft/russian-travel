@@ -7,3 +7,7 @@
 .header__lang-link:first-of-type {
   margin-right: 18px;
 }
+
+.header__lang-link:last-of-type {
+  text-decoration: none;
+}
