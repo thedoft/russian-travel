@@ -4,9 +4,9 @@
 @import url(./__caption/lead__caption.css);
 
 .lead {
-  width: 984px;
-  min-height: 1005px;
-  padding-top: 56px;
+  width: 100%;
+  max-width: 984px;
+  padding-top: 18px;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,4 +18,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 1279px) {
+  .lead {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .lead {
+    max-width: none;
+  }
 }

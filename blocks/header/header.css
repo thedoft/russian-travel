@@ -2,14 +2,20 @@
 @import url(./__lang-link/header__lang-link.css);
 
 .header {
-  width: calc(100% - 96px);
-  max-width: 1280px;
-  min-height: 52px;
-  padding-top: 28px;
+  width: 92.5%;
+  max-width: 1184px;
+  padding: 28px 0 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: space-between;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 16px;
+  }
 }

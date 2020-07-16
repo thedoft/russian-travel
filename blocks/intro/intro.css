@@ -4,8 +4,20 @@
 @import url(./__span-accent/intro__span-accent.css);
 
 .intro {
+  width: 92.5%;
+  max-width: 984px;
   padding: 92px 0;
   margin: 0;
-  width: 984px;
-  min-height: 428px;
+}
+
+@media screen and (max-width: 1023px) {
+  .intro {
+    padding: 88px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .intro {
+    padding: 64px 0;
+  }
 }
