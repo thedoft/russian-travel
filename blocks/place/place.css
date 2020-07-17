@@ -66,19 +66,22 @@
     grid-template-rows: repeat(3, minmax(min-content, max-content));
     -ms-grid-columns: -webkit-min-content;
     -ms-grid-columns: min-content;
-    grid-template-columns: -webkit-min-content;
-    grid-template-columns: min-content;
+    grid-template-columns: -webkit-minmax(min-content, max-content);
+    grid-template-columns: minmax(min-content, max-content);
     padding-bottom: 48px;
     grid-gap: 32px;
   }
+
   .place > *:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
+
   .place > *:nth-child(2) {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
   }
+
   .place > *:nth-child(3) {
     -ms-grid-row: 5;
     -ms-grid-column: 1;

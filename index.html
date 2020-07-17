@@ -13,18 +13,20 @@
   <div class="page">
     <header class="header">
       <div class="header__logo"></div>
-      <div class="header__lang-links">
-        <a href="#" class="header__lang-link header__lang-link_active">Ru</a>
-        <a href="#" class="header__lang-link">En</a>
-      </div>
+      <ul class="header__lang-links">
+        <li class="header__lang-links-item"><a href="#" class="header__lang-link header__lang-link_active">Ru</a></li>
+        <li class="header__lang-links-item"><a href="#" class="header__lang-link">En</a></li>
+      </ul>
     </header>
 
     <main class="content">
       <section class="lead">
         <h1 class="lead__title">Путешествия по России</h1>
         <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
-        <img src="./images/lead-polka.jpg" alt="Изображение" class="lead__image">
-        <p class="lead__caption">Ваша полка — верхняя</p>
+        <figure class="lead__figure">
+          <img src="./images/lead-polka.jpg" alt="Изображение купе поезда и кривой линии, соединяющей 12 городов и образующей маршрут" class="lead__image">
+          <figcaption class="lead__caption">Ваша полка — верхняя</figcaption>
+        </figure>
       </section>
 
       <section class="intro">
@@ -41,8 +43,8 @@
         </ul>
       </section>
 
-      <section class="photo">
-        <ul class="photo-grid">
+      <section class="photo-grid">
+        <ul class="photo-grid__list">
             <li class="photo-grid__item"><img src="./images/photo-grid-train.jpg" alt="Поезд" class="photo-grid__image"></li>
             <li class="photo-grid__item"><img src="./images/photo-grid-atharva-tulsi.jpg" alt="Атарва Тулси" class="photo-grid__image"></li>
             <li class="photo-grid__item"><img src="./images/photo-grid-tuman.jpg" alt="Туман" class="photo-grid__image"></li>
@@ -58,13 +60,13 @@
         </ul>
       </section>
 
-      <section class="locations">
-        <ul class="places">
+      <section class="places">
+        <ul class="places__list">
           <li class="place">
             <h2 class="place__title">Куршская коса</h2>
             <div class="place__website">
               <h3 class="place__url-heading" lang="en">Url</h3>
-              <a href="http://park-kosa.ru" class="place__link">park-kosa.ru</a>
+              <a href="http://park-kosa.ru" class="place__link" target="_blank">park-kosa.ru</a>
             </div>
             <img src="./images/place-kosa.jpg" alt="Куршская коса" class="place__image">
             <div class="place__text">
@@ -80,7 +82,7 @@
             <h2 class="place__title">Кольский</h2>
             <div class="place__website">
               <h3 class="place__url-heading" lang="en">Url</h3>
-              <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" class="place__link">National Geographic</a>
+              <a href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy" class="place__link" target="_blank">National Geographic</a>
             </div>
             <img src="./images/place-kolsky.jpg" alt="Кольский" class="place__image">
             <div class="place__text">
@@ -96,7 +98,7 @@
             <h2 class="place__title">Алтай</h2>
             <div class="place__website">
               <h3 class="place__url-heading" lang="en">Url</h3>
-              <a href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822" class="place__link">Facebook</a>
+              <a href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822" class="place__link" target="_blank">Facebook</a>
             </div>
             <img src="./images/place-altai.jpg" alt="Алтай" class="place__image">
             <div class="place__text">
@@ -112,7 +114,7 @@
             <h2 class="place__title">Зимний Байкал</h2>
             <div class="place__website">
               <h3 class="place__url-heading" lang="en">Url</h3>
-              <a href="https://vk.com/baikalmile" class="place__link">https://vk.com/baikalmile</a>
+              <a href="https://vk.com/baikalmile" class="place__link" target="_blank">https://vk.com/baikalmile</a>
             </div>
             <img src="./images/place-winter-baikal.jpg" alt="Зимний Байкал" class="place__image">
             <div class="place__text">
@@ -128,7 +130,7 @@
             <h2 class="place__title">Карелия</h2>
             <div class="place__website">
               <h3 class="place__url-heading" lang="en">Url</h3>
-              <a href="http://vodlozero.ru" class="place__link">http://vodlozero.ru/</a>
+              <a href="http://vodlozero.ru" class="place__link" target="_blank">http://vodlozero.ru/</a>
             </div>
             <img src="./images/place-karelia.jpg" alt="Карелия" class="place__image">
             <div class="place__text">
@@ -150,11 +152,11 @@
     <footer class="footer">
       <nav class="navigation">
         <ul class="navigation__links">
-          <li class="navigation__links-item"><a href="https://yandex.ru/maps" class="navigation__link">Карты</a></li>
-          <li class="navigation__links-item"><a href="https://yandex.ru/pogoda" class="navigation__link">Погода</a></li>
-          <li class="navigation__links-item"><a href="https://rasp.yandex.ru" class="navigation__link">Расписание</a></li>
-          <li class="navigation__links-item"><a href="https://calendar.yandex.ru" class="navigation__link">Календарь</a></li>
-          <li class="navigation__links-item"><a href="https://travel.yandex.ru" class="navigation__link">Путешествия</a></li>
+          <li class="navigation__links-item"><a href="https://yandex.ru/maps" class="navigation__link" target="_blank">Карты</a></li>
+          <li class="navigation__links-item"><a href="https://yandex.ru/pogoda" class="navigation__link" target="_blank">Погода</a></li>
+          <li class="navigation__links-item"><a href="https://rasp.yandex.ru" class="navigation__link" target="_blank">Расписание</a></li>
+          <li class="navigation__links-item"><a href="https://calendar.yandex.ru" class="navigation__link" target="_blank">Календарь</a></li>
+          <li class="navigation__links-item"><a href="https://travel.yandex.ru" class="navigation__link" target="_blank">Путешествия</a></li>
         </ul>
       </nav>
       <p class="footer__copyright">&copy; 2020. Игорь Шишлов</p>
