@@ -1,4 +1,4 @@
-.footer__link {
+.navigation__link {
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
@@ -8,13 +8,13 @@
   transition: opacity 1s ease;
 }
 
-.footer__link:hover {
+.navigation__link:hover {
   opacity: .8;
   transition: opacity ease 1s;
 }
 
 @media screen and (max-width: 767px) {
-  .footer__link {
+  .navigation__link {
     font-size: 24px;
     line-height: 24px;
   }

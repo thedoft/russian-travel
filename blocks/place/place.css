@@ -8,10 +8,35 @@
 
 .place {
   padding-bottom: 80px;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 40px 1fr;
   grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: minmax(-webkit-min-content, -webkit-max-content) 48px minmax(-webkit-min-content, -webkit-max-content);
+  -ms-grid-rows: minmax(min-content, max-content) 48px minmax(min-content, max-content);
+  grid-template-rows: repeat(2, minmax(-webkit-min-content, -webkit-max-content));
   grid-template-rows: repeat(2, minmax(min-content, max-content));
   grid-gap: 48px 40px;
+}
+
+.place > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.place > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.place > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.place > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
 }
 
 .place:last-of-type {
@@ -28,15 +53,34 @@
   .place {
     grid-column-gap: 28px;
     padding-bottom: 72px;
+    -ms-grid-columns: fit-content(340px) 28px fit-content(340px);
     grid-template-columns: repeat(2, fit-content(340px));
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 627px) {
   .place {
+    -ms-grid-rows: minmax(-webkit-min-content, -webkit-max-content) 32px minmax(-webkit-min-content, -webkit-max-content) 32px minmax(-webkit-min-content, -webkit-max-content);
+    -ms-grid-rows: minmax(min-content, max-content) 32px minmax(min-content, max-content) 32px minmax(min-content, max-content);
+    grid-template-rows: repeat(3, minmax(-webkit-min-content, -webkit-max-content));
     grid-template-rows: repeat(3, minmax(min-content, max-content));
+    -ms-grid-columns: -webkit-min-content;
+    -ms-grid-columns: min-content;
+    grid-template-columns: -webkit-min-content;
     grid-template-columns: min-content;
     padding-bottom: 48px;
     grid-gap: 32px;
+  }
+  .place > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .place > *:nth-child(2) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .place > *:nth-child(3) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
   }
 }

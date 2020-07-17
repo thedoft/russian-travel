@@ -4,7 +4,7 @@
 
 
 .header {
-  width: 92.5%;
+  width: calc(100% - 96px);
   max-width: 1184px;
   padding: 28px 0 48px;
   display: -webkit-box;
@@ -13,11 +13,20 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: space-between;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    width: calc(100% - 48px);
+  }
 }
 
 @media screen and (max-width: 767px) {
   .header {
     padding-top: 16px;
+    width: calc(100% - 32px);
   }
 }

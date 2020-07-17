@@ -1,8 +1,11 @@
 .place__title {
   margin: 0;
+  -ms-grid-row: 1;
   grid-row: 1;
+  -ms-grid-column: 1;
   grid-column: 1;
-  align-self: end;
+  -ms-grid-row-align: end;
+      align-self: end;
   font-weight: 900;
   font-size: 72px;
   line-height: 76px;
@@ -23,8 +26,8 @@
   }
 }
 
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 627px) {
   .place__title {
-    margin-left: 3.725%;
+    margin: 0 16px;
   }
 }
