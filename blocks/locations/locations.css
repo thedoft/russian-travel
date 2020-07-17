@@ -27,3 +27,9 @@
     width: calc(100% - 32px);
   }
 }
+
+@media screen and (max-width: 424px) {
+  .locations {
+    width: 100%;
+  }
+}
