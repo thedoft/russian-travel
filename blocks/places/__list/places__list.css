@@ -1,4 +1,5 @@
 .places__list {
+  width: 100%;
   max-width: 984px;
   list-style: none;
   padding: 0;
