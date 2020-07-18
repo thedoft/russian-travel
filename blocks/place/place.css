@@ -53,8 +53,6 @@
   .place {
     grid-column-gap: 28px;
     padding-bottom: 72px;
-    -ms-grid-columns: fit-content(340px) 28px fit-content(340px);
-    grid-template-columns: repeat(2, fit-content(340px));
   }
 }
 
